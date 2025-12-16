@@ -230,6 +230,7 @@
      text-align: center;
      color: var(--text-color);
      font-weight: 200;
+     padding: 5%;
      font-size: medium;
      font-family: sans-serif;
  }
