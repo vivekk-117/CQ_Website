@@ -14,7 +14,7 @@
  /* DARK MODE VARIABLES */
 
  #themeToggle:checked~*.page {
-     --bg-color: #0f172a;
+     --bg-color:#0B1A33;
      --text-color: #f1f5f9;
      --nav-bg: #1e293b;
      --blue-area-bg: #0c2c4a;
