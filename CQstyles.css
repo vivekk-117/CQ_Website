@@ -1,5 +1,5 @@
  :root {
-     --bg-color: #ffffff;
+     --bg-color: #0B1A33;
      --text-color: #000;
      --nav-bg: rgb(236, 236, 220);
      --blue-area-bg: rgb(0, 48, 91);
@@ -14,11 +14,11 @@
  /* DARK MODE VARIABLES */
 
  #themeToggle:checked~*.page {
-     --bg-color: #0f172a;
+     --bg-color: #0B1A33;
      --text-color: #f1f5f9;
      --nav-bg: #1e293b;
      --blue-area-bg: #0c2c4a;
-     --component-bg: #1e293b;
+     --component-bg: #78a6f0;;
      --team-card-bg: #1e293b;
      --team-card-border: #334155;
      --team-title-color: #f8fafc;
@@ -180,6 +180,10 @@
      font-family: 'Quicksand', sans-serif;
      height: 100px;
  }
+  .main :hover {
+            text-decoration: underline;
+            text-decoration-color: #00305b
+        }
 
  .h1main {
      font-size: 6vw;
@@ -211,20 +215,29 @@
  .element {
      height: 15vw;
      width: 15vw;
-     border-radius: 24vw;
+     border-radius: 2vw;
      background-color: #00305b;
+     box-shadow: 7px 7px 7px black;
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
      opacity: 1;
      font-size: 22px;
      padding: 10%;
-     transition: 1s;
+     transition: 2s;
      font-weight: bolder;
      text-align: center;
      font-family: 'Quicksand', sans-serif;
      color: white;
  }
+.icon i {
+            margin-bottom: 15px;
+            /*change*/
+            display: block;
+            font-size: 40px;
+            color: #ffffff;
+        }
 
  .text {
      text-align: center;
@@ -274,14 +287,12 @@
      font-size: 40px;
      color: white;
      background: rgba(0, 30, 70, 0.9);
-     /* the navy strip you want */
      z-index: 2;
  }
 
  .content {
      position: relative;
      background: #f5ebe0;
-     /* your beige area */
      padding: 40px;
      z-index: 3;
      /* scrolls over background */
@@ -290,6 +301,98 @@
  text-center {
      text-align: center;
  }
+/* gmun hero */
+  .gmun-hero {
+            background: radial-gradient(circle at top right, #0f2a44, #000);
+            color: #fff;
+            padding: 80px 8%;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gmun-container {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .gmun-left h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .gmun-left .hosted {
+            font-size: 16px;
+            color: #cbd5e1;
+            margin-bottom: 18px;
+        }
+        
+        .gmun-left .hosted span {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+        
+        .gmun-left .desc {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e5e7eb;
+            margin-bottom: 25px;
+        }
+        
+        .gmun-points {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .gmun-points li {
+            margin-bottom: 10px;
+            padding-left: 26px;
+            position: relative;
+        }
+        
+        .gmun-points li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+        
+        .gmun-right {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 28px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+        
+        .stat-card h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        
+        .stat-card p {
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+        /* Responsive */
+        
+        @media (max-width: 900px) {
+            .gmun-container {
+                grid-template-columns: 1fr;
+            }
+            .gmun-left h1 {
+                font-size: 34px;
+            }
+        }
 
  /* SECTION BACKGROUND */
 
@@ -392,10 +495,10 @@
      background-color: #d1e3eb;
  }
 
- /* ==========================
+   /*
    RESPONSIVE DESIGN FIXES
-   ========================== */
- /* NAVBAR FIX */
+  */
+
 
  @media (max-width: 992px) {
      .navbar {
@@ -547,6 +650,9 @@
      border-radius: 12px;
      background-color: #d1e3eb;
  }
+  .fade-slider:hover {
+            box-shadow: 9px 7px 7px cyan;
+        }
 
  .fade-slider .slide {
      position: absolute;
